@@ -1,0 +1,126 @@
+/* GENERAL */
+body{
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    display:flex;
+    background: linear-gradient(135deg,#1f2a40,#3a4a6a);
+}
+
+/* SIDEBAR */
+.sidebar{
+    width:250px;
+    height:100vh;
+    background:linear-gradient(180deg,#0f172a,#1e293b);
+    color:white;
+    transition:0.4s;
+    overflow:hidden;
+}
+
+.sidebar.collapsed{
+    width:70px;
+}
+
+/* TOP */
+.top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px;
+}
+
+.toggle-btn{
+    background:none;
+    border:none;
+    color:white;
+    font-size:22px;
+    cursor:pointer;
+}
+
+/* MENU */
+.sidebar ul{
+    list-style:none;
+    padding:0;
+}
+
+.sidebar ul li{
+    padding:15px;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    transition:0.3s;
+}
+
+.sidebar ul li:hover{
+    background:#00c6ff;
+    transform:translateX(5px);
+}
+
+.sidebar ul li span{
+    margin-left:10px;
+}
+
+.sidebar.collapsed ul li span{
+    display:none;
+}
+
+.sidebar.collapsed h2{
+    display:none;
+}
+
+/* CONTENIDO */
+.contenido{
+    flex:1;
+    padding:40px;
+    background:#f4f6f9;
+    border-top-left-radius:30px;
+}
+
+/* HEADER */
+.header{
+    text-align:center;
+}
+
+.header p{
+    color:gray;
+}
+
+/* CARDS */
+.cards{
+    margin-top:40px;
+}
+
+.card{
+    padding:30px;
+    border-radius:20px;
+    color:white;
+    text-align:center;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+.card img{
+    width:70px;
+    margin-bottom:15px;
+    transition:0.3s;
+}
+
+/* evitar que las palabras se rompan */
+.card h3{
+    word-break: normal;
+    overflow-wrap: normal;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0px 15px 30px rgba(0,0,0,0.3);
+}
+
+.card:hover img{
+    transform:rotate(10deg) scale(1.1);
+}
+
+/* COLORES */
+.productos{background:linear-gradient(45deg,#007bff,#00c6ff);}
+.ventas{background:linear-gradient(45deg,#28a745,#5be584);}
+.compras{background:linear-gradient(45deg,#ff9800,#ffc107); color:black;}
+.usuarios{background:linear-gradient(45deg,#6f42c1,#a98df5);}
